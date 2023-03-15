@@ -1,0 +1,2 @@
+n = input('Введите 6-ти значное число: ')
+print("yes") if int(n[0])+int(n[1])+int(n[2]) == int(n[3])+int(n[4])+int(n[5]) else print("no")
