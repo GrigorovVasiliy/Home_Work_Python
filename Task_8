@@ -1,0 +1,8 @@
+n = int(input('Введите число клеток по оси n: '))
+m = int(input('Введите число клеток по оси m: '))
+k = int(input('Введите число долек: '))
+
+if (k<n*m ) and ((k%n==0) or (k%m==0)):
+    print("yes") 
+else:
+    print("no")
