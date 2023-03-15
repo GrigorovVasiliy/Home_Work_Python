@@ -1,0 +1,15 @@
+count_coins = int(input('Введите количество монет, где "0" это решка, а "1" это герб: '))
+tails = 0
+emblem = 0
+coins = []
+for i in range (count_coins):
+    coin = int(input(f'coin_{i}--> '))
+    coins.append(coin)
+    if coin == 0:
+        tails+=1
+    else:
+        emblem+=1
+if tails < emblem:
+    print(f'Меньшее количество монет с "0": {tails} из {count_coins}')
+else:
+    print(f'Меньшее количество монет с "1": {emblem} из {count_coins}')
